@@ -1,0 +1,32 @@
+1tahun = 360 hari
+1bulan = 30 hari
+1minggu = 1 hari
+
+input = 485
+
+hasil1 = input- 360
+hasil1a = input / 360
+hasil1b = print(round(hasil1a))
+tahun = str(hasil1b)
+
+hasil2 = hasil1 / 30
+hasil2a = print(round(hasil2))
+bulan = str(hasil2a)
+
+
+andi + budi = 49 th
+rasio andi & budi = 0.4
+A = 4
+B = 10
+usia andi & budi 2 tahun lg
+andinow + 2
+budinow + 2
+
+hasil3 = hasil2 / 7
+hasil3a = print(round(hasil3))
+minggu = str(hasil3a)
+
+hasil4 = hasil 1 - (round(hasil2) * 30)
+hari = str(hasil4) 
+
+ 
