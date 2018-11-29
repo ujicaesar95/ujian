@@ -1,17 +1,32 @@
-#######################################################################################################################
-#Nama : Fauzy Caesarrochim
-#nomer 3
+#         1
+#     3       5
+# 7       9       11
+# [[1],[3,5],[7,9,11]]
+def rowSumOddNumbers(n):
+    theList = []
+    nilai = 1
 
-n = int(input("n = "))
+    for i in range(1, n+1):
+        rowList = []
+        for j in range(i):
+            rowList.append(nilai)
+            nilai += 2
+        theList.append(rowList)
+    return theList
 
-def segitiga(n,r=[]):
-    for x in range(n):
-        l = len(r)
-        r = [1 if i == 0 or i == l else r[i-1]+r[i] for i in range(l+1)]
-        yield r
+row = int(input("row = "))
+listHasil = rowSumOddNumbers(row)
+print(listHasil)
+print(sum(listHasil[row-1]))
 
-def buat(n):
-    for p in segitiga(n):
-        print(' '.join(map(str,p)).center(n*2)+'\n')
+z = ''
+for listRow, i in zip(listHasil, range(len(listHasil))):
+    for j in range(row-i):
+        z += '  '
+    for num in listRow :
+        z += str(num)
+        for k in range(4 - len(str(num))):
+            z += ' '
+    z += '\n'
 
-buat(n)
+print(z)
