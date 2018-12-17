@@ -29,4 +29,6 @@ minggu = str(hasil3a)
 hasil4 = hasil 1 - (round(hasil2) * 30)
 hari = str(hasil4) 
 
- 
+# benny pratama
+# amy amadea
+# christoforus bayu sw
